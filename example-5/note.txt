@@ -1,3 +1,6 @@
 gradle 创建springboot工程
 参考：
 http://blog.csdn.net/u011422624/article/details/72886820
+
+lombok不识别：
+http://www.cnblogs.com/yjmyzz/p/lombok-with-intellij-idea.html
