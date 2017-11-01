@@ -1,0 +1,5 @@
+rootProject.name = 'gradle-learn'
+include 'example-2'
+include 'example-4'
+include 'example-5'
+

@@ -1,0 +1,13 @@
+编译：
+# gradle assemble 编译源代码，生成jar文件，不执行单元测试
+# gradle build    执行项目构建
+# gradle clean    删除构建项目
+# gradle complile java任务会编译程序中的源代码
+
+获得一个可运行任务及其描述的完整列表：
+# gradle tasks
+
+执行：
+#java -jar build/libs/example-1-1.0-SNAPSHOT.jar
+
+

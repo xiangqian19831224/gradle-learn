@@ -1,0 +1,41 @@
+多项目构建
+例如： app依赖core
+1、根项目配置
+    settings.gradle:
+        include 'app'
+        include 'core'
+
+    build.gradle:公共配置
+        subprojects {
+            apply plugin: 'java'
+
+            repositories {
+                mavenCentral()
+            }
+        }
+2、项目配置
+   app配置依赖：
+      dependencies {
+          compile project(':core')
+      }
+
+   例如：
+   apply plugin: 'application'
+
+   dependencies {
+       compile 'log4j:log4j:1.2.17'
+       compile project(':core')
+   }
+
+   mainClassName = 'HelloWorld'
+
+
+   task copyLicense{
+       outputs.file new File("$buildDir/LICENSE")
+       doLast {
+           copy {
+               from "LICENSE"
+               into "$buildDir"
+           }
+       }
+   }
